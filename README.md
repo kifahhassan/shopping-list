@@ -1,2 +1,3 @@
 # shopping-list
-Shopping list challenge
+Shopping list challenge from DOM section
+
