@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping list example</title>
+
+<!-- CSS ****************************** -->
+
     <style>
       li {
         margin-bottom: 10px;
@@ -15,6 +18,9 @@
         color: #666;
       }
     </style>
+
+ <!-- CSS ****************************** -->
+
   </head>
   <body>
 
@@ -30,14 +36,40 @@
 
     </ul>
 
+  <!-- JavaScript ****************************** -->
+
     <script>
      const ul = document.querySelector("ul");
      const input = document.querySelector("input");
      const button = document.querySelector("button");
 
      button.addEventListener('click', () => {
-      alert(button.textContent);
-     })
+
+      var userInput = document.querySelector("#item");
+      let userValue = userInput.value;
+
+      console.log(userValue);
+
+      userInput.value = '';
+
+     const span = document.createElement("span");
+     const list = document.createElement("li");
+     const button2 = document.createElement("button");
+
+     });
+
+
+
+     list.appendChild(span);
+     list.appendChild(button2);
+
+     span.textContent = userValue;
+
+     button2.textContent = "Delete";
+
+
+
+
 
 
 
