@@ -45,16 +45,23 @@
 
      button.addEventListener('click', () => {
 
-      var userInput = document.querySelector("#item");
-      let userValue = userInput.value;
+      const userValue = input.value;
 
       console.log(userValue);
 
-      userInput.value = '';
+      input.value = '';
 
-     const span = document.createElement("span");
-     const list = document.createElement("li");
+     const listItem = document.createElement("li");
+     const listText = document.createElement("span");
      const button2 = document.createElement("button");
+
+     listItem.appendChild(listText);
+     listText.textContent = userValue;
+     listItem.appendChild(button2);
+     button2.textContent = "Delete";
+     ul.appendChild(listItem);
+
+
 
      });
 
