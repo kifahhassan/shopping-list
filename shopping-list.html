@@ -61,7 +61,13 @@
      button2.textContent = "Delete";
      ul.appendChild(listItem);
 
-     
+     button2.addEventListener('click', () => {
+      ul.removeChild(listItem);
+     });
+
+     input.focus();
+
+
 
 
 
